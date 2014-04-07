@@ -1,6 +1,6 @@
 {
   "name": "reductions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns an array of intermediate values of the reduction (as per reduce) of coll by fn, starting with init.",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "map",
     "iterate",
     "array",
-    "keep",
-    "transform"
+    "transform",
+    "reduce"
   ],
   "author": "Trevor Landau <landautrevor@gmail.com>",
   "license": "ISC",
