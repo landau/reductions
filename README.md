@@ -18,7 +18,6 @@ function reductions(coll, fn, init) { ... }
 ``` js
 var assert = require('assert');
 var reductions = require('./');
-var is = require('is-predicate');
 
 var coll = [1, 2, 3, 4, 5];
 var expect = [1, 3, 6, 10, 15];
