@@ -12,6 +12,8 @@
  * @return {Array}
  */
 module.exports = function reductions(coll, fn, init) {
+  var start = coll[0];
+
   // Recur to set initial value
   if (init !== undefined) {
     return reductions([init].concat(coll), fn);
@@ -21,6 +23,5 @@ module.exports = function reductions(coll, fn, init) {
     return acc.concat(fn(acc[i], v));
   }
 
-  var start = coll[0];
   return coll.slice(1).reduce(reduce, [start]);
 };

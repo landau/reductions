@@ -4,8 +4,8 @@
   "description": "Returns an array of intermediate values of the reduction (as per reduce) of coll by fn, starting with init.",
   "main": "index.js",
   "scripts": {
-    "pretest": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js test.js",
-    "test": "mocha -R nyan test.js"
+    "pretest": "eslint .",
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,11 @@
   },
   "homepage": "https://github.com/landau/reductions",
   "devDependencies": {
-    "jshint-stylish": "^0.1.5",
-    "mocha": "^1.18.2",
-    "jshint": "^2.4.4",
-    "is-predicate": "^0.4.0"
+    "eslint": "4.8.0",
+    "eslint-config-airbnb": "16.0.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "mocha": "4.0.0"
   }
 }
