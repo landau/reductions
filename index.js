@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Returns an array of intermediate values of the reduction
