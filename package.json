@@ -6,6 +6,9 @@
   "files": [
     "index.js"
   ],
+  "engines": {
+    "node": ">= 8.0.0"
+  },
   "scripts": {
     "test": "nyc -s mocha -R dot test.js",
     "posttest": "npm run -s view-cov && npm run -s check-cov && eslint .",
