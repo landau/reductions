@@ -1,18 +1,18 @@
-'use strict';
+"use strict";
 
 /**
  * Returns an array of intermediate values of the reduction
  * (as per reduce) of collection by fn, starting with init.
  *
  *
- * @param {Array} collection
- * @param {Function} fn
- * @param {*} init
+ * @param {Array} collection -
+ * @param {Function} fn -
+ * @param {*} init -
  *
- * @return {Array}
+ * @returns {Array} -
  */
 module.exports = function reductions(collection, fn, init) {
-  var start = collection[0];
+  const start = collection[0];
 
   // Recur to set initial value
   if (init !== undefined) {
