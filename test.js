@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 const mocha = require('mocha');
-const reductions = require('./');
+const reductions = require('.');
 
 const describe = mocha.describe;
 const before = mocha.before;
